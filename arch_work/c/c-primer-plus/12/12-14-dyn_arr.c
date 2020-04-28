@@ -36,15 +36,14 @@ int main (void){
   for (i = 0; i < number; i++){
 
     printf("%7.2f ", ptd[i]);
-    if (i % 7 == 6){
-      putchar ('1');
+    if (i % 7 == 6){ //控制格式 一行超过7个换行
       putchar ('\n');
     }
   }
 
-  putchar ('2');
-  if (i % 7 != 0)
+  if (i % 7 != 0)    //最后一行不满7个换行
     putchar ('\n');
+  
   puts ("Done.");
   free (ptd);
 

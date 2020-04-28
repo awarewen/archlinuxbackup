@@ -8,7 +8,7 @@ int main (void){
   char words [STLEN];
 
   puts ("Enter a string, please.");
-  fgets (words, STLEN, stdin);
+  fgets (words, 14, stdin);
   printf("Your string twice (puts(), then fputs()):\n");
   puts (words);
 
