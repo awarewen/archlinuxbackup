@@ -1,0 +1,146 @@
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2017 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg at 163.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+    colorscheme = "gruvbox"
+    colorscheme_bg = "dark"
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors
+    enable_guicolors = true
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "arrow"
+    statusline_inactive_separator = "arrow"
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = true
+# 添加
+ # 设置中文帮助
+   vim_help_language = "cn"
+
+ # 设置顶部标签列表序号类型，有以下五种类型，分别是 0 - 4
+    buffer_index_type = 0
+    # 0: 1 ➛ ➊
+    # 1: 1 ➛ ➀
+    # 2: 1 ➛ ⓵
+    # 3: 1 ➛ ¹
+    # 4: 1 ➛ 1
+ # 状态栏左端部分的构成
+    statusline_left_sections = ['winnr', 'major mode', 'filename', 'fileformat', 'minor mode lighters', 'version control info', 'search status']
+    # 状态栏右端部分的构成
+    statusline_right_sections = ['cursorpos', 'percentage', 'date', 'time']
+    # 列表可以由以下一项或多项组成
+
+    # 'winnr' 当前窗口编号
+    # 'syntax checking'
+    # 'filename' 文件名
+    # 'fileformat' 文件格式
+    # 'major mode'
+    # 'minor mode lighters'
+    # 'cursorpos' 光标位置
+    # 'percentage' 百分比
+    # 'date' 日期
+    # 'time' 时间
+    # 'whitespace' 打开或者保存文件时，如果第 n 行的行尾有空格则显示 trailing[n]，并不能实时显示出行尾有空格的行号。
+    # 'battery status' 电池状态
+    # 'input method' 输入法
+    # 'search status' 搜索状态
+#
+#####################################################################################################################################
+
+#######################################################
+#                     插件配置                        #
+#######################################################
+# Enable autocomplete layer自动补全 
+[[layers]]
+name = 'autocomplete'
+auto_completion_return_key_behavior = "complete"
+auto_completion_tab_key_behavior = "smart"
+
+[[layers]]
+name = 'shell'
+default_position = 'top'
+default_height = 30
+#######################################################
+# 添加自定义插件
+[[custom_plugins]]
+    name = "lilydjwg/colorizer"
+    on_cmd = ["ColorHighlight", "ColorToggle"]  # 延迟加载
+
+
+
+#####################语言模块##########################
+
+# c 语言模块
+[[layers]]
+  name = "lang#c"
+
+##
+
+#####################补全模块#########################
+
+# autocomplete 模块
+[[layers]]
+  name = "lsp"
+
+##
+
+
+# clangd 模块配置
+[[layers]]
+  name = "lsp"
+  filetypes = [
+    "c",
+    "cpp"
+  ]
+  [layers.override_cmd]
+    c = ["clangd"]
+
+##
+
+####################工程跳转###########################
+
+# SpaceVim 自带工程管理插件，可以识别项目根目录，自动跳转 alternate 文件。需要在项目根目录添加工程文件 .project_alt.json： 
+#{
+#  "*.c": {"alternate": "{}.h"},
+#  "*.h": {"alternate": "{}.c"}
+#}
+
+# 通过以上的配置，就可以使用命令 :A 在源文件和测试文件之间进行跳转
+##
+
+###################代码格式化##########################
+
+# format 模块，快捷键为 SPC b f，异步执行 clang-format 命令：
+[[layers]]
+  name = "format"
+
+##
+
+######################################################
+
+
+# chat 聊天 qq/微信
+[[layers]]
+  name = "chat"
+
+# 中文帮助
+[[layers]]
+  name = "chinese"
+
+# 启动logo切换
+[[layers]]
+  name = "core#banner"
+
+# cscope 类似ctags 
+[[layers]]
+name = "cscope"
