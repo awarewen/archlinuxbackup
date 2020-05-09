@@ -4,6 +4,11 @@
 # Author: Wang Shidong < wsdjeg at 163.com >
 # URL: https://spacevim.org
 # License: GPLv3
+# tags 生成
+# ctags -I __THROW -I __attribute_pure__ -I __nonnull -I __attribute__ 
+# --file-scope=yes --langmap=c:+.h --languages=c,c++ --links=yes --c-kinds=+p 
+# --c++-kinds=+p --fields=+iaS --extra=+q  -f ~/.vim/systags /usr/include/* 
+# /usr/include/sys/* /usr/include/bits/*  /usr/include/netinet/* /usr/include/arpa/* /usr/include/mysql/*
 #=============================================================================
 
 # All SpaceVim option below [option] section
@@ -60,22 +65,11 @@
 #######################################################
 #                     插件配置                        #
 #######################################################
-# Enable autocomplete layer自动补全 
-[[layers]]
-name = 'autocomplete'
-auto_completion_return_key_behavior = "complete"
-auto_completion_tab_key_behavior = "smart"
 
 [[layers]]
 name = 'shell'
 default_position = 'top'
 default_height = 30
-#######################################################
-# 添加自定义插件
-[[custom_plugins]]
-    name = "lilydjwg/colorizer"
-    on_cmd = ["ColorHighlight", "ColorToggle"]  # 延迟加载
-
 
 
 #####################语言模块##########################
@@ -83,17 +77,16 @@ default_height = 30
 # c 语言模块
 [[layers]]
   name = "lang#c"
+  clang_executable = "/usr/bin/clang"
+  [layer.clang_std]
+    c = "c99"
+    cpp = "c++1z"
+    objc = "c99"
+    objcpp = "c++1z"
 
 ##
 
 #####################补全模块#########################
-
-# autocomplete 模块
-[[layers]]
-  name = "lsp"
-
-##
-
 
 # clangd 模块配置
 [[layers]]
@@ -103,7 +96,15 @@ default_height = 30
     "cpp"
   ]
   [layers.override_cmd]
+
+#c = ["cquery"]
     c = ["clangd"]
+
+# Enable autocomplete layer自动补全 
+#[[layers]]
+#name = 'autocomplete'
+#auto_completion_return_key_behavior = "complete"
+#auto_completion_tab_key_behavior = "smart"
 
 ##
 
@@ -128,10 +129,10 @@ default_height = 30
 
 ######################################################
 
-
 # chat 聊天 qq/微信
 [[layers]]
-  name = "chat"
+name = "chat"
+enable=false
 
 # 中文帮助
 [[layers]]
@@ -142,5 +143,16 @@ default_height = 30
   name = "core#banner"
 
 # cscope 类似ctags 
-[[layers]]
-name = "cscope"
+#[[layers]]
+#name = "cscope"
+
+#
+#######################################################
+# 添加自定义插件
+[[custom_plugins]]
+    name = "lilydjwg/colorizer"
+    on_cmd = ["ColorHighlight", "ColorToggle"]  # 延迟加载
+
+#[[custom_plugins]]
+#    name = "neoclide/coc.nvim"
+#enable=false
