@@ -273,10 +273,8 @@ y = (4 + x++) + (6 + x++); //(4 + x++)并不是一个完整的表达式
 
   > 类型的级别(高至低)  
 
-    >> long == long int 长整型 int被省略了
-
-    >> long double
-
+    >> long == long int 长整型 int被省略了  
+    >> long double  
     >> double
 
     >> float
