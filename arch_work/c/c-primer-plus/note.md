@@ -5,9 +5,9 @@ C Primer Plus
 ---
 * 本章主要内容
 > string.h && strlen()
-> stdio.h && sizeof()
-> #define && const
-> scanf() && printf()
+  stdio.h && sizeof()
+  #define && const
+  scanf() && printf()
 
 ## char类型数组
   |cahr name[****];
