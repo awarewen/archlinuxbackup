@@ -12,18 +12,18 @@ C Primer Plus
 ### 4.1 char类型数组
 
     cahr name[];
-> - char数组储存字符串时，应多留出一位用来存放*\0(null)* 结束符号  
-  - **"**双引号中的字符组成一个字符串，且以*\0*结尾的字符**"**
+>  char数组储存字符串时, 应多留出一位用来存放`\0(null)` 结束符号  
+> `"`双引号中的字符组成一个字符串, 且以*\0*结尾的字符`"`
 
 ### 4.2 **%s** 为一个数组输入/输出一个字符串
 
 `printf("打印一个字符串%s \n", name);`
-> *- %s* 输出*name数组*中的字符串
-  *- %c* 输出一个字符，后面的数组名代表了数组首地址 *name[0]*，则输出*name[0]*中的字符
+    > %s 输出 name数组 中的字符串
+    > %c 输出一个字符, 后面的数组名代表了数组首地址 name[0], 则输出 name[0] 中的字符
 
 `scanf("输入一个字符串 %s：", name);   //非数组加&取址符`
-> *- %s* 默认跳过**第一个字符前**的**所有空白字符**直到**下一个空白字符前**结束  
-  - *%c* 读取一个字符输入,**包括空白字符**
+    > %s 默认跳过 第一个字符前 的 所有空白字符 直到 下一个空白字符前 结束  
+    > %c 读取一个字符输入, 包括空白字符
 
 ### 4.3 *字符*和*字符串*的区别
 
@@ -88,13 +88,13 @@ C Primer Plus
 #### - printf,scanf的返回值  
 ##### 1. 大部分的c语言函数都有返回值  
 1. printf
-  - 成功：输出字符的个数
-  - 错误：返回一个负值  
+    - 成功：输出字符的个数
+    - 错误：返回一个负值  
 
 2. scanf
-  - 成功：返回读取到的项数
-  - 读取到文件结尾或遇到硬件问题：返回一个负值 EOF(-1)
-  - 错误：未读取任何项，输入和需要读取的项类型不匹配时 返回0
+    - 成功：返回读取到的项数
+    - 读取到文件结尾或遇到硬件问题：返回一个负值 EOF(-1)
+    - 错误：未读取任何项，输入和需要读取的项类型不匹配时 返回0
 
 ### 4.9 参数传递
 
@@ -129,10 +129,10 @@ enter: a b c d
 ### 5.2 基本运算符
 
 1. = :从右向左运算 ,其左项为一个地址(变量)  
-  - `a = a + b;`  
+    - `a = a + b;`  
 
 2. `-`, ``+``:一元运算符
-  - `-(-12) == 12`
+    - `-(-12) == 12`
 
 ### 5.3 左值，数据对象，右值
 
@@ -262,29 +262,35 @@ y = (4 + x++) + (6 + x++); //(4 + x++)并不是一个完整的表达式
 
 - c语言采用了一套自动类型转换的规则
 
-- 升级/降级：
-  > 类型转换出现在表达式中，unsigned，signed, char, short都会被自动转换成int/unsigned int
-  > (short和int一样大，unsigned int 比 int 大, unsigned short 会转换为unsigned int)都是由较小的类型转换为较大的类型
-  > 涉及两种类型的计算，两个值都会被转换成两种类型的更高级别
+- 升级/降级:
+  > 类型转换出现在表达式中 `unsigned, signed, char, short` 都会被自动转换成`int/unsigned int`
+
+  > `(short和int一样大, unsigned int 比 int 大, unsigned short 会转换为unsigned int` 都是由较小的类型转换为较大的类型
+
+  > 涉及两种类型的计算, 两个值都会被转换成两种类型的更高级别
+
   > 类型的级别(高至低)  
-    > * long == long int 长整型 int被省略了
-    > long double
-    > double
-    > float
-    > unsigned long long
-    > long long
-    > unsigned long
-    > long          //当long 和 int大小相同时 unsigned int比long级别高
-    > unsigned int
-    > int
-* short 和 char没有列出是因为他们已经升级到了int 或unsigned int
-* 但作为函数参数传递时，cahr 和 short转换为int,float 转换为double，函数原型会自动覆盖升级
+      >> long == long int 长整型 int被省略了
+      > long double
+      > double
+      > float
+      > unsigned long long
+      > long long
+      > unsigned long
+      > long          //当long 和 int大小相同时 unsigned int比long级别高
+      > unsigned int
+      > int
+    > short 和 char没有列出是因为他们已经升级到了int 或unsigned int
+    > 但作为函数参数传递时，cahr 和 short转换为int,float 转换为double，函数原型会自动覆盖升级
+
 * 一般类型升级并不会造成麻烦，但是类型降级会导致降级的类型可能存放不下原来的数据
+
 * 待转换和目标类型不匹配：
-. int 转换 8 位的unsigned char ,待赋值原始值求模256: unsigned char UInum; UInum = 123456789; 最后UInum == 21;利用公式 a-(a/b)*b
-. 待赋值为整数，目标类型是有符号整型,结果因实现而异
-. 待赋值为浮点数，目标类型是整型，该行为是未定义的
-. 当浮点型降级为整数类型 小数点后的位数会被截断丢弃,23.1, 23.45截断为23
+    - int 转换 8 位的unsigned char ,待赋值原始值求模256: unsigned char UInum; UInum = 123456789; 最后UInum == 21;
+         - `利用公式 a-(a/b)*b`
+    - 待赋值为整数，目标类型是有符号整型,结果因实现而异
+    - 待赋值为浮点数，目标类型是整型，该行为是未定义的
+    - 当浮点型降级为整数类型 小数点后的位数会被截断丢弃,23.1, 23.45截断为23
 
 ## 强制类型转换
 (类型名)变量名
