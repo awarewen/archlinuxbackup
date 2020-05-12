@@ -1,19 +1,13 @@
-<div style='display: none'>
-time : 12 may 2020
-</div>
-[//]: # (name: GitNoWen)
-[^_^]: # (Gmail: blacktonewascrazy@Gmail.com)
-[//]: <> ()
-[comment]: <> (-----------------------------)
-
+C Primer Plus
+=============
 
 # 第四章：字符串和格式化输入/输出
 ---
 * 本章主要内容
-1. string.h && strlen()
-2. stdio.h && sizeof()
-3. #define && const
-4. scanf() && printf()
+> string.h && strlen()
+> stdio.h && sizeof()
+> #define && const
+> scanf() && printf()
 
 ## char类型数组
   |cahr name[****];
