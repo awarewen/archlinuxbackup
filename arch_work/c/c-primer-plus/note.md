@@ -1,8 +1,15 @@
-//笔记
-[TOC]
+<div style='display: none'>
+time : 12 may 2020
+</div>
+[//]: # (name: GitNoWen)
+[^_^]: # (Gmail: blacktonewascrazy@Gmail.com)
+[//]: <> ()
+[comment]: <> (-----------------------------)
+
 
 # 第四章：字符串和格式化输入/输出
 ---
+* 本章主要内容
 1. string.h && strlen()
 2. stdio.h && sizeof()
 3. #define && const
