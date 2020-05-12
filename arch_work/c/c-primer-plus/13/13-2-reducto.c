@@ -31,15 +31,7 @@ int main (int argc, char *argv[]){
   strncpy (name, argv[1], LEN - 5);
   name [LEN - 5] = '\0';
   strcat (name, ".red"); //将.red复制到文件名末尾,缺点不会删去原有的文件名
- /* 2.
-  * while ( (strrchr (name[i], '.') == NULL)
-  *     i++;    //查找'.'符号最后一次的位置
-  * while ( i <= LEN )
-  *       name [i++] = '\0'; //将'.'后的所有位设为\0
-  *
-  * 3. 查找第一个'.'然后将'.'后面的字符全部删去
-  *
-  *    */
+
 
   if ( (out = fopen (name, "w")) == NULL){
 

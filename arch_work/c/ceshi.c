@@ -53,7 +53,7 @@ int main (void){
 
   printf("==========file_1-fa=========\n");
   while ((ch = getc (fa)) != EOF)
-    putchar (fa);
+    putchar (ch);
   fclose (fa);
 
   printf("===========ar=============\n");

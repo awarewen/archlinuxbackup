@@ -21,10 +21,11 @@ int main (void){
   int ch;
 
   puts ("Enter name of destination file:");
-  s_gets (file_app, SLEN);
+  
+   s_gets (file_app, SLEN);
   if ((fa = fopen (file_app, "a+")) == NULL){
 
-    fprintf(stderr, "Can't open %s\n", file_app);
+     fprintf(stderr, "Can't open %s\n", file_app);
     exit (EXIT_FAILURE);
   }
   if (setvbuf (fa, NULL, _IOFBF, BUFSIZE) != 0){
@@ -32,7 +33,7 @@ int main (void){
     fputs ("Can't create output buffer\n", stderr);
     exit (EXIT_FAILURE);
   }
-
+  
   puts ("Enter name of first source file (empty line to quit) :");
   while (s_gets (file_src, SLEN) && file_src[0] != '\0'){
 

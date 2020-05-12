@@ -33,8 +33,8 @@ int main (void){
       putchar (ch); //打印字符
   }
   putchar ('\n');
-
   fclose (fp);
 
   return 0;
+  
 }
