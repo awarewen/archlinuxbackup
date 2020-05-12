@@ -265,35 +265,22 @@ y = (4 + x++) + (6 + x++); //(4 + x++)并不是一个完整的表达式
 - c语言采用了一套自动类型转换的规则
 
 - 升级/降级:
-  > 类型转换出现在表达式中 `unsigned, signed, char, short` 都会被自动转换成`int/unsigned int`
-
-  > `(short和int一样大, unsigned int 比 int 大, unsigned short 会转换为unsigned int` 都是由较小的类型转换为较大的类型
-
-  > 涉及两种类型的计算, 两个值都会被转换成两种类型的更高级别
-
+  > 类型转换出现在表达式中 `unsigned, signed, char, short` 都会被自动转换成`int/unsigned int`  
+  > `(short和int一样大, unsigned int 比 int 大, unsigned short 会转换为unsigned int` 都是由较小的类型转换为较大的类型  
+  > 涉及两种类型的计算, 两个值都会被转换成两种类型的更高级别  
   > 类型的级别(高至低)  
-
     >> long == long int 长整型 int被省略了  
     >> long double  
-    >> double
-
-    >> float
-
-    >> unsigned long long
-
-    >> long long
-
-    >> unsigned long
-
-    >> long          //当long 和 int大小相同时 unsigned int比long级别高
-
-    >> unsigned int
-
-    >> int
-
-    >> short 和 char没有列出是因为他们已经升级到了int 或unsigned int
-
-  > 但作为函数参数传递时, cahr 和 short转换为int,float 转换为double，函数原型会自动覆盖升级
+    >> double  
+    >> float  
+    >> unsigned long long  
+    >> long long  
+    >> unsigned long  
+    >> long          //当long 和 int大小相同时 unsigned int比long级别高  
+    >> unsigned int  
+    >> int  
+    >> short 和 char没有列出是因为他们已经升级到了int 或unsigned int  
+  > 但作为函数参数传递时, cahr 和 short转换为int,float 转换为double，函数原型会自动覆盖升级  
 
 * 一般类型升级并不会造成麻烦，但是类型降级会导致降级的类型可能存放不下原来的数据
 
