@@ -4,13 +4,14 @@ C Primer Plus
 # 第四章：字符串和格式化输入/输出
 ---
 * 本章主要内容
-> string.h && strlen()
-  stdio.h && sizeof()
-  #define && const
-  scanf() && printf()
+    > string.h  strlen()  
 
+    >  stdio.h && sizeof() 
+      #define && const  
+      scanf() && printf()
+ 
 ## char类型数组
-  |cahr name[****];
+    cahr name[****];
 
 char数组储存字符串时，应多留出一位用来存放\0(null) 结束符号
 "双引号中的字符组成一个字符串，且以\0结尾的字符"
