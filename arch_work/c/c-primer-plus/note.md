@@ -274,17 +274,17 @@ y = (4 + x++) + (6 + x++); //(4 + x++)并不是一个完整的表达式
   > 类型的级别(高至低)  
 
     >> long == long int 长整型 int被省略了
-      >> long double
-      > double
-      > float
-      > unsigned long long
-      > long long
-      > unsigned long
-      > long          //当long 和 int大小相同时 unsigned int比long级别高
-      > unsigned int
-      > int
-    > short 和 char没有列出是因为他们已经升级到了int 或unsigned int
-    > 但作为函数参数传递时，cahr 和 short转换为int,float 转换为double，函数原型会自动覆盖升级
+    >> long double
+    >> double
+    >> float
+    >> unsigned long long
+    >> long long
+    >> unsigned long
+    >> long          //当long 和 int大小相同时 unsigned int比long级别高
+    >> unsigned int
+    >> int
+    >> short 和 char没有列出是因为他们已经升级到了int 或unsigned int
+  > 但作为函数参数传递时, cahr 和 short转换为int,float 转换为double，函数原型会自动覆盖升级
 
 * 一般类型升级并不会造成麻烦，但是类型降级会导致降级的类型可能存放不下原来的数据
 
