@@ -1,5 +1,6 @@
 C Primer Plus
 =============
+1. [第四章:  字符串和格式化输入/输出](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md)
 
 ## 第四章：字符串和格式化输入/输出
 ---
@@ -11,8 +12,11 @@ C Primer Plus
  
 ### 4.1 char类型数组
 
-```1c
-cahr name[10];
+```c
+char name[10];
+```
+```cpp
+char name [10];
 ```
 >  char数组储存字符串时, 应多留出一位用来存放`\0(null)` 结束符号  
 > `"`双引号中的字符组成一个字符串, 且以*\0*结尾的字符`"`
