@@ -1,6 +1,8 @@
 C Primer Plus
 =============
-1. [第四章:  字符串和格式化输入/输出](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md)
+- 目录
+    1. [第四章: 字符串和格式化输入/输出](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md)   
+    2. [第五章: 运算符, 语句, 左值](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E4%BA%94%E7%AB%A0%E8%BF%90%E7%AE%97%E7%AC%A6-%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E8%AF%AD%E5%8F%A5-%E5%B7%A6%E5%80%BC)  
 
 ## 第四章：字符串和格式化输入/输出
 ---
