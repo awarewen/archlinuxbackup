@@ -1,5 +1,5 @@
 C Primer Plus
-=============
+================================================================
 - 目录
     1. [第四章: 字符串和格式化输入/输出](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md)   
     2. [第五章: 运算符, 语句, 左值](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E4%BA%94%E7%AB%A0%E8%BF%90%E7%AE%97%E7%AC%A6-%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E8%AF%AD%E5%8F%A5-%E5%B7%A6%E5%80%BC)  
@@ -17,34 +17,38 @@ C Primer Plus
 ```c
 char name[10];
 ```
-```cpp
-char name [10];
-```
 >  char数组储存字符串时, 应多留出一位用来存放`\0(null)` 结束符号  
 > `"`双引号中的字符组成一个字符串, 且以*\0*结尾的字符`"`
 
 ### 4.2 **%s** 为一个数组输入/输出一个字符串
 
-`printf("打印一个字符串%s \n", name);`
+```c
+printf("打印一个字符串%s \n", name);
+```
     > %s 输出 name数组 中的字符串
     > %c 输出一个字符, 后面的数组名代表了数组首地址 name[0], 则输出 name[0] 中的字符
 
-`scanf("输入一个字符串 %s：", name);   //非数组加&取址符`
-    > %s 默认跳过 第一个字符前 的 所有空白字符 直到 下一个空白字符前 结束  
+```c
+scanf("输入一个字符串 %s：", name);   //非数组加&取址符
+```
+    > %s 默认跳过 第一个字符前 的 所有空白字符 直到 下一个空白字符前结束  
     > %c 读取一个字符输入, 包括空白字符
 
-### 4.3 *字符*和*字符串*的区别
+### 4.3 *字符* 和 *字符串 *的区别
 
 - 字符串以\0结尾
 
-`"a" == 'a'+'\0' // 字符串`
-`'a' == 'a' //字符`
+```c
+"a" == 'a'+'\0' // 字符串
+'a' == 'a' //字符
+```
 
 ### 4.4 *sizeof* 和 *strlen*
 
-    printf("name[40] %s, sizeof = %zd, strlen = %lu, sizeof = %u",
-          name, sizeof(name), strlen(name), sizeof(name));
-
+```c
+printf("name[40] %s, sizeof = %zd, strlen = %lu, sizeof = %u",
+   name, sizeof(name), strlen(name), sizeof(name));
+```
 - *strlen* 给出字符串的长度，但不包括字符串的结束符\0  
 - *sizeof* 给出以字节的计算结果，包含了空字符\0
 
