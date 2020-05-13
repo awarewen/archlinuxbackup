@@ -2,11 +2,11 @@ C Primer Plus
 ================================================================
 - 目录
     1. [第四章: 字符串和格式化输入/输出](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md)   
-        1. 
-        2. 
+        1.  
+        2.  
     2. [第五章: 运算符, 语句, 左值](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E4%BA%94%E7%AB%A0%E8%BF%90%E7%AE%97%E7%AC%A6-%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E8%AF%AD%E5%8F%A5-%E5%B7%A6%E5%80%BC)  
-        1. 
-        2. 
+        1.  
+        2.  
     3. [第六章: 循环 for, while ,do while](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E5%85%AD%E7%AB%A0%E5%BE%AA%E7%8E%AF)  
     4. [第七章: 流程控制 if else, 三目? :](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#71-if-else%E9%80%89%E6%8B%A9%E5%B5%8C%E5%A5%97%E5%87%BD%E6%95%B0)  
     5. [第八章: 缓冲, 重定向](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E5%85%AB%E7%AB%A0)  
