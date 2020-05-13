@@ -9,8 +9,8 @@ C Primer Plus
         2.  
     3. [第六章: 循环 for, while ,do while](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E5%85%AD%E7%AB%A0%E5%BE%AA%E7%8E%AF)  
     4. [第七章: 流程控制 if else, 三目? :](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#71-if-else%E9%80%89%E6%8B%A9%E5%B5%8C%E5%A5%97%E5%87%BD%E6%95%B0)  
-    5. [第八章: 缓冲, 重定向](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E5%85%AB%E7%AB%A0)  
-    6. [第九章: 指针, 数组](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E4%B9%9D%E7%AB%A0)  
+    5. [第八章: 缓冲, 重定向](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E7%BC%93%E5%86%B2-%E9%87%8D%E5%AE%9A%E5%90%91-%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8)
+    6. [第九章: 指针, 数组](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E4%B9%9D%E7%AB%A0%E6%8C%87%E9%92%88-%E6%95%B0%E7%BB%84-%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8)
 
 ## 第四章：字符串和格式化输入/输出
 ---
