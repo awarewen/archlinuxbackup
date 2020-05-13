@@ -658,10 +658,10 @@ part: statement;
 1. 假如一个文件名为`words`
 2. 一个文字处理程序`echo_eof`
 - 将输入重定向  
-> `echo_eof < words`  
+> 1. `echo_eof < words`  
 > > `<` 该运算符将`stdin`流和`words`文件相关联  
 
-> `echo_eof > mywords`  
+> 2. `echo_eof > mywords`  
 > > 新建一个`mywords`文件, 如果已有将会擦除其数据重新将`echo_eof`程序的输出写入进去  
 > > `>` 该运算符将`stdout`输出流定向到`mywords`文件中  
 
