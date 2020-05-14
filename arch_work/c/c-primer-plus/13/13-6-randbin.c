@@ -29,6 +29,7 @@ int main(void){
   // 以二进制模式把数组写入文件,操作完文件将其关闭
   fwrite(numbers, sizeof(double), ARSIZE, iofile); fclose (iofile);
   
+  //以只读模式打开
   if ((iofile = fopen (file, "rb")) == NULL){
 
     fprintf(stderr, "Could not open %s for random access.\n", file);
@@ -38,7 +39,7 @@ int main(void){
   printf("Enter an index in the range 0-%d.\n", ARSIZE-1);
 
   while (scanf ("%d" ,&i) == 1 && i >= 0 && i < ARSIZE){
-
+    //定位
     pos = (long) i * sizeof (double);
     fseek (iofile, pos, SEEK_SET);    // 从文件开始处将文件指针指向pos偏移量的位置
     fread (&value, sizeof (double), 1, iofile);

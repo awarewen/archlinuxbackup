@@ -90,7 +90,7 @@ char * s_gets (char *st, int n){
   char * ret_val;
   char * find;
 
-  ret_val = fgets (st, n, stdin);
+  ret_val = fgets (st, n, stdin); 
   if (ret_val){
 
     find = strchr(st, '\n'); //查找换行
