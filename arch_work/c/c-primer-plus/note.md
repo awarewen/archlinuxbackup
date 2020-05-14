@@ -11,8 +11,8 @@ C Primer Plus-- 学习记录
     4. [第七章: 流程控制 if else, 三目? :](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E4%B8%83%E7%AB%A0%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6-%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8)  
     5. [第八章: 缓冲, 重定向](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E7%BC%93%E5%86%B2-%E9%87%8D%E5%AE%9A%E5%90%91-%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8)  
     6. [第九章: 递归和函数](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E4%B9%9D%E7%AB%A0%E6%8C%87%E9%92%88-%E6%95%B0%E7%BB%84-%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8)  
-    7. [第十章: 指针和数组](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E6%95%B0%E7%BB%84%E5%92%8C%E6%8C%87%E9%92%88)  
-    8. [第十一章: 字符串处理](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86)
+    7. [第十章: 指针和数组](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E5%8D%81%E7%AB%A0-%E6%95%B0%E7%BB%84%E5%92%8C%E6%8C%87%E9%92%88-%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8)  
+    8. [第十一章: 字符串处理](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86-%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8)  
 
 
 ## 第四章：字符串和格式化输入/输出
@@ -135,7 +135,7 @@ enter: a b c d
 
 ---
 
-## 第五章:运算符, 表达式, 语句, 左值  [返回顶部](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#c-primer-plus)  
+## 第五章:运算符, 表达式, 语句, 左值  [返回顶部](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#c-primer-plus---%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95)
 
 > while , typedef  
 > 运算符：=、-、 * 、/、%、++、--、(类型名)  
@@ -356,7 +356,7 @@ int main (void){
 ```
 * 当参数列表的值类型不匹配时，会进行自动类型转换
 
-## 第六章:循环  [返回顶部](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#c-primer-plus)  
+## 第六章:循环  [返回顶部](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#c-primer-plus---%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95)
 
 > 关键字：`for, while, do while`  
 > 运算符：`<, >, >=, <=, !=, ==, +=, -=, /=, *=,%=`  
@@ -482,7 +482,7 @@ do{
 > 定义函数  
 
 
-## 第七章:流程控制 [返回顶部](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#c-primer-plus)  
+## 第七章:流程控制 [返回顶部](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#c-primer-plus---%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95)
 
 > 关键字:`if, else, switch, continue, break, case, default, goto`  
 > 运算符:`&&, ||, !, ?:`  
@@ -636,7 +636,7 @@ for (){
 part: statement;
 ```
 
-## 第八章: 缓冲, 重定向 [返回顶部](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#c-primer-plus)  
+## 第八章: 缓冲, 重定向 [返回顶部](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#c-primer-plus---%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95)  
 
 > 介绍输入输出，缓冲输入，无缓冲输入  
 > 如何通过键盘模拟文件结尾  
@@ -703,7 +703,7 @@ part: statement;
 
 - 在某些dos系统中定向符两侧不能有空格
 
-## 第九章:指针, 数组 [返回顶部](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#c-primer-plus)  
+## 第九章:指针, 数组 [返回顶部](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#c-primer-plus---%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95)
 
 > `return`
 > `*`(一元), `&`(一元)
@@ -758,7 +758,7 @@ int * p;
 5. m = *p;      //* 运算符解引p所指向的地址n中所储存的值,然后将其赋值给m
 ```
 
-## 第十章: 数组和指针 [返回顶部](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#c-primer-plus)  
+## 第十章: 数组和指针 [返回顶部](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#c-primer-plus---%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95)
 
 ### 10.1 数组  
 #### 1. 数组声明  
@@ -1121,7 +1121,7 @@ pr = (int [2]){ 2, 3 }; //(int [2])本身就是首元素的地址
 - 对于数组则没有选择，我们必须要传递指针，因为指针的效率更高，节省更多资源  
 
 
-## 第十一章: 字符串处理 [返回顶部](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#c-primer-plus)  
+## 第十一章: 字符串处理 [返回顶部](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#c-primer-plus---%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95)
 
 > 字符串  
 > C字符串函数库  
