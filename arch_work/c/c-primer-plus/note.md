@@ -93,7 +93,7 @@ printf("name[40] %s, sizeof = %zd, strlen = %lu, sizeof = %u",
     > (t) :和整型转换一起用：`%td`，表示`pptrdiff_t`,两个指针差值的类型  
     > (z) :用于`sizeof` && `strlen`
 
-### 4.8`scanf`函数与`printf`` 区别
+### 4.8`scanf`函数与`printf` 区别
 
 - 对于`float` 和`double`，`printf` 都用`%f, %e ,%E %g %G` 转换说明  
 - 而`scanf`将`%f, %e ,%E %g %G` 他们用于`float`类型,`double`类型用`%lf`修饰符  
