@@ -1706,9 +1706,9 @@ int x2 = 2 * x; //不可以　x是变量
     2. 静态存储期
     3. 文件作用域的变量
     ```c
-static int a;
-int main (void){}
-```
+    static int a;
+    int main (void){}
+    ```
 - 也可以使用`extern` 进行重复声明来强调要使用一个具有内部链接的静态变量
 
 ## 12.18 存储说明符
