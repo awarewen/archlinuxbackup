@@ -1997,7 +1997,7 @@ fread()函数返回值
 
 
 ## feof /ferror
-   int feof (FILE *fp) / int feeror (FILE *fp)
+   `int feof (FILE *fp) / int feeror (FILE *fp)`
 
    标准i/o 函数返回EOF， 通常表明函数已到达文件结尾
    但是当出现读取错误时，函数也会返回EOF，
@@ -2014,6 +2014,60 @@ fread()函数返回值
 > - 结构体: 结构模板，结构变量
 > - 访问结构体成员，处理结构体的函数
 > - 联合指向函数的指针
+
+### 14.1 结构体声明
+
+    1. 结构体关键字`struct`,描述了一个结构的组织布局   
+        - 结构声明又称模板,结构体标记可选  
+    ```c
+    struct book {  //声明一个模板
+       //结构标记为book
+      //这个结构共有三个成员
+
+      char title[10];    //书的标题
+      char author[10];  //书本作者
+      float value;     //价格
+    }; //结构体声明结束，声明以分号结尾
+    ```  
+    2. 结构体声明(模板),并未创建实际的数据对象，只是描述了该结构由哪些对象组成  
+    3. 结构体成员可以为任意C类型,或其他结构  
+    4. 结构体声明可以放在函数内，也可以放在函数外，两者区别在于作用域不同  
+    5. 定义结构体变量  
+        - 结构体变量声明为结构体变量library创建了三个存储空间
+    ```c
+    struct book library;  //声明了一个book结构的结构体变量  
+     //为library 结构变量创建了三个book结构成员
+    // title, author, value
+    ```
+    6. 对计算机来说这种结构体和结构变量分开声明的方法与下面的方法一样
+    ```c
+    struct book {       //结构模板标记
+
+      char title[10];
+      char author[10];
+      float value;
+    } library;      //结构体布局和结构变量一起声明
+    ```
+    7. 声明一个无需结构体标记的结构体变量
+    ```c
+    struct {  //无结构体标记
+
+      char title;
+    } library;//结构体变量
+    ```
+### 14.2 初始化结构
+
+    1. 在ANSI C 之前不能用自动变量初始化结构  
+        1. 列表初始化
+         ```c
+         struct book library = {  //初始化
+           //结构初始化，每一行对应相应结构体成员
+           "The pious pirate and Devious Damsel", //title
+           "Eenee Vivotte",                      // author
+           1.95                                 //  value
+         };   //结构初始化结束
+         ```
+         2. 
 
 
 
