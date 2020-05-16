@@ -3,6 +3,7 @@
 //
 #include <stdio.h>
 #include <string.h>
+
 /*  */
 #define MAXTITL 41   //书名长度
 #define MAXAUTL 31  // 作者姓名最大长度
@@ -20,8 +21,7 @@ struct book { //book为此结构体的标记
 
 int main (void){
 
-  struct book library; //声明一个book类型的结构体变量
-
+  struct book library; //声明一个book类型的结构体变量 
   //
   printf("Please enter the book title.\n");
   s_gets (library.title, MAXTITL);
