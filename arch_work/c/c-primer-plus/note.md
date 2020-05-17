@@ -1,6 +1,6 @@
 C Primer Plus-- 学习记录
 ================================================================
-- 目录
+- 目录  
     [第四章: 字符串和格式化输入/输出](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E5%9B%9B%E7%AB%A0%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA)  
     [第五章: 运算符, 语句, 左值](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E4%BA%94%E7%AB%A0%E8%BF%90%E7%AE%97%E7%AC%A6-%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E8%AF%AD%E5%8F%A5-%E5%B7%A6%E5%80%BC--%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8)  
     [第六章: 循环 for, while ,do while](https://github.com/GitNoWen/gitnowen/blob/master/arch_work/c/c-primer-plus/note.md#%E7%AC%AC%E5%85%AD%E7%AB%A0%E5%BE%AA%E7%8E%AF--%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8)  
