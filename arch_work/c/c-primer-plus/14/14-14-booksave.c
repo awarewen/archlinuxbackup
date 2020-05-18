@@ -11,21 +11,21 @@
 
 char * s_gets (char *st, int n);
 
-struct book {
+struct book { //一本书的结构
 
-  char title[MAXTITL];
-  char author[MAXAUTL];
-  float value;
+  char title[MAXTITL];  //标题
+  char author[MAXAUTL];// 作者
+  float value;//价格
 };
 
-
+// main start
 int main (void){
 
-  struct book library[MAXBKS];
+  struct book library[MAXBKS]; //10本书
   int count = 0;      //计数器
   int index, filecount;
   FILE * pbooks;//文件指针
-  int size = sizeof (struct book);
+  int size = sizeof (struct book); //得出book结构的大小
 
   if ((pbooks = fopen ("book.dat", "a+b")) == NULL){
 
@@ -43,6 +43,7 @@ int main (void){
   }
 
   filecount = count;
+  //将添加前的数量和添加后的数量分开
   if (count == MAXBKS){
 
     fputs ("The book.dat file is full.", stderr);
@@ -72,6 +73,7 @@ int main (void){
       printf("%s by %s: $%.2f\n", 
               library[index].title, library[index].author, library[index].value);
     fwrite (&library[filecount], size, count - filecount, pbooks);
+    //count - filecount 表示添加了几本书,并将添加的书写入
   }
   else 
     puts ("No books!!\n");
