@@ -5,36 +5,35 @@
 
 #define LEN 20
 
-const char *msgs[5] = { //数组指针声明和初始化
+char *msgs[5] = {
 
   "   Thank you for the wonderful evening, ",
   "You certainly prove that a ",
   "is a special kind of guy. We must get together",
-  "over a delicious ",
-  " and have a few laughs"
+  "over have a few laughs"
 };
 
-struct names { //第一个结构
+struct names {
 
   char first[LEN];
   char last[LEN];
 };
 
-struct guys {
+struct guy {
 
-  struct names handle;  //嵌套结构
+  struct names handle;
   char favfood[LEN];
   char job[LEN];
   float income;
 };
 
-int main (void){
+int main(void){
 
-  struct guys fellow = {
+  struct guy fellow = {
 
     {"Ewen", "Villard"},
-    "grilled salmon", 
-    "personality",
+    "grilled salmon",
+    "personality coach",
     68112.00
   };
 
@@ -43,7 +42,6 @@ int main (void){
   printf("%s%s\n", msgs[1], fellow.job);
   printf("%s\n", msgs[2]);
   printf("%s%s%s", msgs[3], fellow.favfood, msgs[4]);
-
   if (fellow.income > 150000.0)
     puts ("!!");
   else if (fellow.income > 75000.0)
@@ -51,7 +49,7 @@ int main (void){
   else
     puts (".");
 
-  printf("\n%40s%s\n", " ", "See you soon, ");
+  printf("\n%40s%s\n", " ", "see you soon");
   printf("%40s%s\n", " ", "Shalala");
 
   return 0;

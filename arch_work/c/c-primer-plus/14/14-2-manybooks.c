@@ -1,79 +1,87 @@
 // 14-2-manybooks.c
 // 处理多本书籍
 //
+// 利用结构数组
+// 结构：
+// title,author,value
+//
+// 处理流程：
+// 循环表单询问用户输入:title,author,value
+// 打印所有的书本信息
+
 #include <stdio.h>
 #include <string.h>
 
-#define MAXTITL 40    //标题最大为  MAXTILE - 1
-#define MAXAUTL 40   // 作者名最大为MAXAUTL - 1
-#define MAXBKS  100//  最大的书本数量
+#define MAXTITL 41
+#define MAXAUTL 31
+#define MAXBKS  10 //设置最大的处理能力
 
-char *s_gets (char *,int);  //自定义的输入函数
+struct book {
 
-struct book { // 一本书的结构
-
-  char title [MAXTITL];   //标题
-  char author [MAXAUTL]; //作者
-  float value;          //价格
+  char title [MAXTITL];
+  char author[MAXAUTL];
+  float value;
 };
+
+char *s_gets (char *, int);
 
 int main (void){
 
-  struct book library [MAXBKS]; //创建一个book结构的结构数组
-  int count = 0;
+  struct book library[MAXBKS];
+  int count = 0;    //计数
   int index;
 
-  printf("Please enter the book title:\n");
-  printf("Press [enter] at the start of a line to stop.\n");
+  printf("Please enter title(empty line to quit):\n");//询问用户输入书本
 
-  while (count < MAXAUTL && s_gets (library[count].title, MAXTITL) != NULL
-         && library[count].title[0] != '\0'){
-
-    printf("Now enter the author.\n");
+  // 用户输入
+  while (count < MAXBKS && s_gets (library[count].title, MAXTITL) != NULL &&
+         library[count].title[0] != '\0') {//限制最多10本书，输入不为空，并且不以\0开头
+  
+    puts ("Now enter the author:");
     s_gets (library[count].author, MAXAUTL);
-    printf("Now enter the value.\n");
-    scanf (" %f", &library[count].value);
+    puts ("Now enter the value");
+    scanf (" %f", &library[count++].value);
 
-    while (getchar() != '\n') //清理栈
+    while (getchar ()!= '\n')//处理多余的输入
       continue;
-    if (count < MAXBKS)
-      printf("Enter the next title.\n");
-  }
 
-  if (count > 0){
+    if (count < MAXBKS)//询问用户是否继续输入
+    puts ("Please the next title (empty line to quit):");
 
-    printf("Here is the list of your books:\n");
-    for (index = 0; index < MAXBKS; index++){
+   }
 
-      printf("%s by %s : %.2f\n", library[index].title, 
-                                  library[index].author, 
-                                  library[index].value
-          );
+    //打印书本信息
+    if (count > 0){
+
+      printf("Here is the list of your books:\n");
+      for (index = 0; index < count; index ++)
+        printf("%s by %s: is $%.2f \n", 
+            library[index].title, library[index].author, library[index].value);
     }
-  }else
-    printf("No books enter!\n");
+    else
+      printf("NO books!");
 
   return 0;
 }
+
 
 char *s_gets (char *st, int n){
 
   char *ret_val;
   char *find;
 
-  ret_val = fgets(st, n, stdin);
+  ret_val = fgets (st, n, stdin);
 
   if (ret_val){
 
-    find = strchr(st, '\n');  //换行符
-    if (find)
+    find = strchr (st, '\n');
+    if (*find)
       *find = '\0';
-    else
+    else 
       while (getchar () != '\n')
         continue;
   }
 
-  return ret_val; 
+  return ret_val;
 }
-
 
