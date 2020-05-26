@@ -4,17 +4,11 @@
 
 int main (void){
 
-
-
 	int i_input = 0;
 
 	printf("Pleas enter a number:_______\b\b\b\b\b\b");
-
 	scanf("%d", &i_input);
-
 	printf("\nThe char of %d is %c\n", i_input, i_input);
 
-	return 0;
-
-	
+	return 0; 
 }

@@ -13,7 +13,7 @@ int main(void){
   scanf(" %c", &ch);
 
   for (row = 'A'; row <= ch; row ++){   //行控制，一共打印多少行
-    for (spa = ch; spa >= row; spa --)  //打印空格
+    for (spa = ch-1; spa >= row; spa --)  //打印空格
       printf(" ");
     for (column = 'A'; column <= row; column ++)  //打印包括第一行的左半三角
       printf("%c", column);

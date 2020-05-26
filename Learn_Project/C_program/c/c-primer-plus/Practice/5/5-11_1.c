@@ -21,6 +21,9 @@ int main(void){
     min = input % HOUR;
     printf("%dmin is %d hour and %d min\n", input, hour, min);
     printf("Please enter next (q to quit): ");
+
+    while (getchar () != '\n')
+      continue;
   }
   printf("Done!\n");
 
