@@ -11,11 +11,10 @@
 
 1. GitHub+jekyll
 
-  what is jekyll
+ - what is jekyll
       一个简单的博客形态的静态站点生产机器
 
   缺点在于在GitHub上用jekyll搭建的博客可使用的插件太少基本是不能使用插件
-
   jekyll是基于ruby语言开发的，所以造成一个明显问题，文章的渲染速度过慢
 
 2. GitHub+ Hexo
