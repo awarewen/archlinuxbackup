@@ -4,17 +4,16 @@
 
 # Site
 title: Aware's Blog
-subtitle: '副标题'
-description: '描述'
+subtitle: 'A nice day'
+description: 'test description'
 keywords:
 author: Aware Wen
-language: zh-CN
-timezone: 'Asia/Shanghai'
+language: zh_CN
+timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-#url: http://example.com
-url: http://GitNoWen.gihub.io
+url: https://awarewen.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -35,10 +34,6 @@ skip_render:
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
-
-# 中文英文中间加空格
-auto_spacing: true
-
 titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
@@ -46,7 +41,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: true # 资源文件夹{% asset_img filename 描述%}
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -87,7 +82,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'date'
+updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -104,14 +99,11 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: landscape
-theme: next
+  theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'git'
-  repo: https://github.com/GitNoWen/GitNoWen.github.io
+  type: git
+  repo: git@github.com:awarewen/awarewen.github.io.git
   branch: master
-
-# site-subtitle
-  sbutitle: Subtitle
