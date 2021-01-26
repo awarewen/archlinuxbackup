@@ -110,7 +110,8 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: https://github.com/GitNoWen/GitNoWen.github.io/tree/master
+  repo: https://github.com/GitNoWen/GitNoWen.github.io
+  branch: master
 
 # site-subtitle
   sbutitle: Subtitle
