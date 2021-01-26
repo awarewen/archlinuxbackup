@@ -117,7 +117,7 @@ ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
-
+alias cman='man -M /usr/local/share/man/zh_CN'
 source $ZSH/oh-my-zsh.sh
 #source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh #补全终端历史输入
 ZSH_THEME="robbyrussell"
