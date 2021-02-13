@@ -1,11 +1,8 @@
 #include <stdio.h>
 
-
 int main (void){
 
+  printf ("Concrete contains qravel and cement.\n");
 
-
-	printf("concret contains gravel and cement! \n");
-
-	return 0;
+  return 0;
 }

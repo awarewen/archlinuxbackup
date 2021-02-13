@@ -4,16 +4,16 @@
 
 # Site
 title: Aware's Blog
-subtitle: 'A nice day'
+subtitle: 'Have a nice day'
 description: 'test description'
 keywords:
-author: Aware Wen
-language: zh_CN
+author: Aware wen
+language: zh_cn
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://awarewen.github.io
+url: http://awarewen.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -47,7 +47,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: true
+  auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
@@ -99,7 +99,16 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: landscape
-  theme: next
+theme: next
+
+leancloud_counter_security:
+  enable_sync: true
+  app_id: vSzLQ2v71lzFJwgQcvMx157h-gzGzoHsz # <your app id>
+  app_key: MmaJEFv6rxSFI22OUIKhEVX6 # <your app key>
+  username: blacktonewascrazy@gmail.com
+  password: 2541087242Wen
+
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

@@ -18,7 +18,7 @@ C Primer Plus-- 学习记录
 ## 第四章：字符串和格式化输入/输出
 ---
 * 本章主要内容
-    > string.h  strlen()  
+      string.h  strlen()  
       stdio.h && sizeof() 
       #define && const  
       scanf() && printf()
