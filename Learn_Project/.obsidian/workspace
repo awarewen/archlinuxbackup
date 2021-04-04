@@ -13,7 +13,20 @@
             "file": "math/7.md",
             "mode": "source"
           }
-        }
+        },
+        "group": "7087b6351218329b"
+      },
+      {
+        "id": "5d04e66b6d756cd9",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "math/7.md",
+            "mode": "preview"
+          }
+        },
+        "group": "7087b6351218329b"
       }
     ],
     "direction": "vertical"
@@ -53,7 +66,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 184
   },
   "right": {
     "id": "be69f3792844fd62",

@@ -31,11 +31,6 @@ let g:ruby_host_prog = '~/.gem/ruby/2.7.0/bin/neovim-ruby-host'
 let g:ruby_path = system('echo $HOME/.rbenv/shims')
 
 "//
-" 添加中文的vim help文件
-"""""""""""""""""""""""""
-"let g:spacevim_vim_help_language = 'cn'  " toml
-
-"//
 " c语言模块相关
 """"""""""""""
 " 跳转inlcude 标识
