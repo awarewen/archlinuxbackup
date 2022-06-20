@@ -1,0 +1,28 @@
+[Settings for obsidian obsidian]
+Description=Settings for obsidian obsidian
+opacityactive=85
+opacityactiverule=2
+opacityinactive=80
+opacityinactiverule=2
+types=1
+windowrole=browser-window
+wmclass=obsidian obsidian
+wmclasscomplete=true
+wmclassmatch=1
+
+[konsole konsole 的设置]
+Description=konsole konsole 的设置
+opacityactive=85
+opacityactiverule=2
+types=1
+windowrole=mainwindow#1
+wmclass=konsole konsole
+wmclasscomplete=true
+wmclassmatch=1
+
+[最小窗口尺寸100*100]
+Description=最小窗口尺寸100*100
+minsize=100,100
+minsizerule=2
+types=1
+wmclasscomplete=true

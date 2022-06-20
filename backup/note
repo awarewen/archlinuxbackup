@@ -1,0 +1,11 @@
+#2020/2/22	星期六
+#GitNoWen/gitnowen
+git add
+git commit -m add
+git push
+
+
+默认情况下，在ArchLinux中挂载非系统分区需要密码验证，非常麻烦，可以修改配置文件：
+/usr/share/polkit-1/actions/org.freedesktop.udisks2.policy
+将此配置文件中的<action id="org.freedesktop.udisks2.filesystem-mount-system">
+标签中的子标签<allow_active></allow_active>的值改为yes即可无需通过密码验证直接挂载分区。

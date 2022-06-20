@@ -1,0 +1,118 @@
+{
+  "main": {
+    "id": "8e68ee58a015cf51",
+    "type": "split",
+    "children": [
+      {
+        "id": "61818035d9944aea",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "math/7.md",
+            "mode": "source"
+          }
+        },
+        "group": "7087b6351218329b"
+      },
+      {
+        "id": "5d04e66b6d756cd9",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "math/7.md",
+            "mode": "preview"
+          }
+        },
+        "group": "7087b6351218329b"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1aa76835dddded35",
+    "type": "split",
+    "children": [
+      {
+        "id": "935744f306d257b4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "448f5a69f11393dc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c271c07f97eded1b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 184
+  },
+  "right": {
+    "id": "be69f3792844fd62",
+    "type": "split",
+    "children": [
+      {
+        "id": "72b86c8c7719d804",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb4d37f43758f7c4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "math/7.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ce195bbd1a6d96cb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "math/7.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "math/7.md",
+    "math/note.md",
+    "电路Circuit/模拟电路和数字电路自学手册 .md",
+    "C_program/c/c-primer-plus/note.md",
+    "HowToLearn.md"
+  ]
+}

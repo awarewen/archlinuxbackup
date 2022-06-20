@@ -1,0 +1,15 @@
+//10-12-1.c
+//打印内容
+//
+#include <stdio.h>
+int main (void){
+
+  int ref[] = { 8, 4, 0, 2 };
+  int * ptr;
+  int index;
+
+  for (index = 0, ptr = ref; index < 4; index ++, ptr ++)
+    printf("ref(index) = %d, ptr = %d\n", ref[index], *ptr);
+
+  return 0;
+}

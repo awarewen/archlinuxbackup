@@ -1,0 +1,57 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+# ------------------------------------------------------------------------------
+
+# ## load zinit  ========================================
+zi_home="${HOME}/.zi"
+source "${zi_home}/bin/zi.zsh"
+autoload -Uz _zi
+(( ${+_comps} )) && _comps[zi]=_zi
+# ------------------------------------------------------------------------------
+
+# ## load plugins ===============================================================
+#
+# ## theme:Powerlevel10k
+zi ice depth=1; zi light romkatv/powerlevel10k
+zi ice depth'1' atload"[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" nocd
+zi light romkatv/powerlevel10k
+##
+#
+
+# ------------------------------------------------------------------------------
+
+# ## Created by newuser for 5.8.1 ==============================================
+# ## alias
+alias archbig='neofetch --config  ~/.config/neofetch/config2.conf'
+alias arch='neofetch'
+alias archlogo='neofetch --ascii .config/neofetch/archlogo.txt'
+alias mvps='sudo ssh -p 28687 104.194.72.86'
+alias jwcp='cd /run/media/awarewen/01D7D4A25895C600/公众号文章/'
+alias Ezsh='nvim ~/.zshrc'
+alias Eviminit='nvim ~/.SpaceVim/init.vim'
+alias Szsh='source ~/.zshrc'
+alias ff='fzf | xclip -selection c' #将搜索到的路径放入剪贴板
+alias ls='ls --color=auto -p'
+alias cdme='cd ~/Documents/knowledge/'
+
+# ## FZF Config ================================================================
+export FZF_DEFAULT_COMMAND='fd --hidden --follow . /etc /home' # --ignore-file ~/.gitginore . /etc /home'
+export FZF_DEFAULT_OPTS='--height 60% --layout=reverse-list --border --preview "echo {} | ~/.config/fzf/fzf_preview.py" --preview-window=top'
+# ------------------------------------------------------------------------------
+
+
+# ## PATHS =====================================================================
+PATH="/home/awarewen/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/awarewen/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/awarewen/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/awarewen/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/awarewen/perl5"; export PERL_MM_OPT;
+# ------------------------------------------------------------------------------
+
+#source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -1,0 +1,1 @@
+windows 10 专业版：KNJ4F-RP334-6X67G-7PGVQ-3PFDB
