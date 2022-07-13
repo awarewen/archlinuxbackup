@@ -34,12 +34,12 @@ alias jwcp='cd /run/media/awarewen/01D7D4A25895C600/公众号文章/'
 alias Ezsh='nvim ~/.zshrc'
 alias Eviminit='nvim ~/.SpaceVim/init.vim'
 alias Szsh='source ~/.zshrc'
-alias ff='fzf | xclip -selection c' #将搜索到的路径放入剪贴板
+alias xclip='xclip -selection c' #将搜索到的路径放入剪贴板
 alias ls='ls --color=auto -p'
 alias cdme='cd ~/Documents/knowledge/'
 
 # ## FZF Config ================================================================
-export FZF_DEFAULT_COMMAND='fd --hidden --follow . /etc /home' # --ignore-file ~/.gitginore . /etc /home'
+export FZF_DEFAULT_COMMAND='fd --hidden --follow . /etc /home/awarewen ' #--ignore-file=~/.gitignore . /etc /home'
 export FZF_DEFAULT_OPTS='--height 60% --layout=reverse-list --border --preview "echo {} | ~/.config/fzf/fzf_preview.py" --preview-window=top'
 # ------------------------------------------------------------------------------
 
@@ -52,6 +52,14 @@ PERL_MB_OPT="--install_base \"/home/awarewen/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/awarewen/perl5"; export PERL_MM_OPT;
 # ------------------------------------------------------------------------------
 
+
+# ## proxy =====================================================================
+export https_proxy=http://127.0.0.1:8080
+export http_proxy=http://127.0.0.1:8080
+export all_proxy=http://127.0.0.1:14204
+# ------------------------------------------------------------------------------
+
 #source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+#

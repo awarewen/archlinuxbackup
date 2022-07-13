@@ -18,12 +18,12 @@ BackwardWord=Ctrl+Left
 Begin=
 BeginningOfLine=Home
 Clear=
-Close=Ctrl+W; Ctrl+Esc
+Close=Ctrl+Esc; Ctrl+W
 ConfigureNotifications=
 ConfigureToolbars=
-Copy=Ctrl+C; Ctrl+Ins
+Copy=Ctrl+Ins; Ctrl+C
 CreateFolder=F10
-Cut=Shift+Del; Ctrl+X
+Cut=Ctrl+X; Shift+Del
 DeleteFile=Shift+Del
 DeleteWordBack=Ctrl+Backspace
 DeleteWordForward=Ctrl+Del
@@ -47,7 +47,7 @@ Goto=
 GotoLine=Ctrl+G
 GotoPage=
 Help=F1
-Home=Home Page; Alt+Home
+Home=Alt+Home; Home Page
 KeyBindings=
 Mail=
 MoveToTrash=Del
@@ -56,7 +56,7 @@ Next=PgDown
 NextCompletion=
 Open=Ctrl+O
 OpenRecent=
-Paste=Shift+Ins; Ctrl+V
+Paste=Ctrl+V; Shift+Ins
 Paste Selection=Ctrl+Shift+Ins
 Preferences=
 PrevCompletion=
@@ -65,7 +65,7 @@ PrintPreview=
 Prior=PgUp
 Quit=
 Redo=Ctrl+Shift+Z
-Reload=Refresh; F5
+Reload=F5; Refresh
 RenameFile=F2
 Replace=Ctrl+R
 ReportBug=
@@ -76,7 +76,7 @@ Save=Ctrl+S
 SaveAs=
 SaveOptions=
 SelectAll=Ctrl+A
-ShowHideHiddenFiles=Ctrl+H; Alt+.
+ShowHideHiddenFiles=Alt+.; Ctrl+H
 ShowMenubar=
 ShowStatusbar=
 ShowToolbar=
@@ -89,7 +89,7 @@ Undo=Ctrl+Z
 Up=Alt+Up
 WhatsThis=Shift+F1
 Zoom=
-ZoomIn=Ctrl++; Ctrl+=
+ZoomIn=Ctrl+=; Ctrl++
 ZoomOut=Ctrl+-
 
 [com.uploadedlobster.peek.desktop][Global Shortcuts]
@@ -112,10 +112,10 @@ display=Meta+P; Display
 
 [kmix][Global Shortcuts]
 decrease_microphone_volume=Microphone Volume Down
-decrease_volume=Volume Down; Ctrl+Shift+PgDown
+decrease_volume=Ctrl+Shift+PgDown; Volume Down
 increase_microphone_volume=Microphone Volume Up
-increase_volume=Volume Up; Ctrl+Shift+PgUp
-mic_mute=Meta+Volume Mute; Microphone Mute
+increase_volume=Ctrl+Shift+PgUp; Volume Up
+mic_mute=Microphone Mute; Meta+Volume Mute
 mute=Volume Mute
 
 [konversation][Global Shortcuts]
@@ -174,6 +174,7 @@ MoveZoomDown=Meta+Ctrl+Down
 MoveZoomLeft=Meta+Ctrl+Left
 MoveZoomRight=Meta+Ctrl+Right
 MoveZoomUp=Meta+Ctrl+Up
+Overview=Meta+W
 Setup Window Shortcut=
 Show Desktop=Meta+D
 ShowDesktopGrid=Alt+Shift+W
@@ -317,7 +318,7 @@ mediavolumeup=Ctrl+Alt++
 nextmedia=Media Next
 pausemedia=Media Pause
 playmedia=
-playpausemedia=Pause; Media Play
+playpausemedia=Media Play; Pause
 previousmedia=Media Previous
 stopmedia=Media Stop
 
@@ -379,6 +380,7 @@ activate widget 74=Meta+/
 activate widget 83=
 clear-history=
 clipboard_action=
+cycle-panels=Meta+Alt+P
 cycleNextAction=
 cyclePrevAction=
 edit_clipboard=
@@ -395,7 +397,7 @@ switch to previous activity=
 toggle do not disturb=
 
 [systemsettings.desktop][Global Shortcuts]
-_launch=Meta+Ctrl+Alt+Shift+K; Tools
+_launch=Tools; Meta+Ctrl+Alt+Shift+K
 kcm-kscreen=
 kcm-lookandfeel=
 kcm-users=
